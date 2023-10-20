@@ -10,8 +10,17 @@ export default {
     fontSize: {
       default: ['1rem', '1.5rem'] /* 16px */,
       lg: ['1.875rem', '2.25rem'] /* 32px*/,
+      xl: ['3rem', '1'],
+      xxl: ['3.75rem', '1'] /* 60px*/,
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        main: "url('assets/images/main.png')",
+      },
+      height: {
+        main: 'calc(100vh - 3.5rem)',
+      },
+    },
   },
   plugins: [],
 };
