@@ -8,9 +8,9 @@ export default {
       green: '#31854D',
     },
     fontSize: {
-      default: ['1rem', '1.5rem'] /* 16px */,
-      lg: ['1.875rem', '2.25rem'] /* 32px*/,
-      xl: ['3rem', '1'],
+      base: ['1rem', '1.5rem'] /* 16px */,
+      lg: ['1.5rem', '2rem'] /* 24px */,
+      xl: ['1.875rem', '2.25rem'] /* 32px*/,
       xxl: ['3.75rem', '1'] /* 60px*/,
     },
     extend: {
