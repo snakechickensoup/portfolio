@@ -34,7 +34,7 @@ const AboutPage = () => {
           <section className='p-6 text-sm sm:text-base sm:p-10'>
             <div>Kang Mijeong</div>
             <div>jagarmj@gmail.com</div>
-            <div>01055203868</div>
+            <div>010-5520-3868</div>
           </section>
         </div>
       </article>

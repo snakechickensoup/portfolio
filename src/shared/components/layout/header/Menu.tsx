@@ -1,0 +1,54 @@
+import { useState } from 'react';
+import Button from 'shared/components/button/Button';
+import { BUTTON_TYPES } from 'shared/components/button/constants';
+import { categories } from 'assets/options';
+import MenuIcon from 'assets/icons/Menu.svg?react';
+import ArrowIcon from 'assets/icons/Arrow.svg?react';
+
+const Menu = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const openMenu = isMenuOpen ? 'w-full h-full' : 'w-2 h-2';
+  const showMenu = isMenuOpen ? 'opacity-100' : '-left-96 -top-96 opacity-0';
+  return (
+    <>
+      <div
+        className={`z-10 fixed top-0 bottom-0 ${openMenu} transition-window duration-700 bg-default`}>
+        <ul
+          className={`relative ${showMenu} flex flex-col md:flex-row md:gap-8 items-center transition-all duration-500 justify-center h-full text-white gap-4`}>
+          {categories.map((category) => (
+            <li>
+              <Button
+                title={category}
+                styles={BUTTON_TYPES.default}
+                handleClick={() => {}}>
+                <div className='flex items-center justify-center w-40 h-40 text-lg border border-white rounded-full md:w-56 md:h-56 '>
+                  {category}
+                </div>
+              </Button>
+            </li>
+          ))}
+          <li className='hidden text-lg sm:block md:absolute md:bottom-20'>
+            <div className='mb-4'>jagarmj@gmail.com</div>
+            <Button
+              title='github'
+              styles={BUTTON_TYPES.default}
+              handleClick={() => {}}>
+              <div className='inline-flex h-8 gap-2'>
+                github <ArrowIcon />
+              </div>
+            </Button>
+          </li>
+        </ul>
+      </div>
+
+      <Button
+        handleClick={() => setIsMenuOpen((prev) => !prev)}
+        styles={BUTTON_TYPES.menu}
+        title='Menu'>
+        <MenuIcon />
+      </Button>
+    </>
+  );
+};
+
+export default Menu;

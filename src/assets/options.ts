@@ -12,3 +12,5 @@ export const tags = [
   'Tailwind CSS',
   'Styled Components',
 ];
+
+export const categories = ['About', 'Works', 'Projects'];

@@ -23,6 +23,9 @@ export default {
       height: {
         main: 'calc(100vh - 3.5rem)',
       },
+      transitionProperty: {
+        window: 'width, height',
+      },
     },
   },
   plugins: [],
