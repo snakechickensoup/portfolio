@@ -6,8 +6,11 @@ export default {
       default: '#2A292A',
       white: '#F5F5F5',
       green: '#31854D',
+      yellow: '#FFCD29',
     },
     fontSize: {
+      xs: ['0.75rem', '1rem'] /* 12px */,
+      sm: ['0.875rem', '1.25rem'] /* 14px */,
       base: ['1rem', '1.5rem'] /* 16px */,
       lg: ['1.5rem', '2rem'] /* 24px */,
       xl: ['1.875rem', '2.25rem'] /* 32px*/,
