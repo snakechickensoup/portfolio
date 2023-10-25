@@ -5,7 +5,7 @@ const AboutPage = () => {
     <main className='p-4 bg-default h-main sm:p-8 md:p-20'>
       <article className='h-full bg-white md:flex md:items-center'>
         <section className='flex flex-col items-center justify-center p-6 sm:p-10'>
-          <div className='w-32 h-32 overflow-hidden border rounded-full sm:w-40 sm:h-40 border-default md:w-48 md:h-48'>
+          <div className='w-32 h-32 overflow-hidden border rounded-full sm:w-40 sm:h-40 border-default md:w-60 md:h-60'>
             <img
               alt='user-avatar'
               src={'src/assets/images/avatar.png'}
