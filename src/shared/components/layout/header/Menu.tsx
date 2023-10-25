@@ -8,13 +8,11 @@ import ArrowIcon from 'assets/icons/Arrow.svg?react';
 const Menu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const openMenu = isMenuOpen ? 'w-full h-full' : 'w-2 h-2';
-  const showMenu = isMenuOpen ? 'opacity-100' : '-left-96 -top-96 opacity-0';
   return (
     <>
       <div
-        className={`z-10 fixed top-0 bottom-0 ${openMenu} transition-window duration-700 bg-default`}>
-        <ul
-          className={`relative ${showMenu} flex flex-col md:flex-row md:gap-8 items-center transition-all duration-500 justify-center h-full text-white gap-4`}>
+        className={`z-10 fixed top-0  ${openMenu} transition-window duration-500 bg-default overflow-hidden`}>
+        <ul className='flex flex-col items-center justify-center h-full gap-4 text-white md:flex-row md:gap-8'>
           {categories.map((category) => (
             <li>
               <Button
