@@ -1,10 +1,10 @@
-import MainPage from 'pages/main/MainPage';
 import Layout from './shared/components/layout/Layout';
+import { Outlet } from 'react-router-dom';
 
 const App = () => {
   return (
     <Layout>
-      <MainPage />
+      <Outlet />
     </Layout>
   );
 };
