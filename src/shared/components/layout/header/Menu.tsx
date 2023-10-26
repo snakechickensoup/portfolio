@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import Button from 'shared/components/button/Button';
 import { BUTTON_TYPES } from 'shared/components/button/constants';
-import { categories } from 'assets/options';
+import { categories, githubURL } from 'assets/options';
 import MenuIcon from 'assets/icons/Menu.svg?react';
 import ArrowIcon from 'assets/icons/Arrow.svg?react';
+import { useNavigate } from 'react-router-dom';
 
 const Menu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const navigate = useNavigate();
   const openMenu = isMenuOpen ? 'w-full h-full' : 'w-0 h-0';
   return (
     <>
@@ -18,7 +20,10 @@ const Menu = () => {
               <Button
                 title={category}
                 styles={BUTTON_TYPES.default}
-                handleClick={() => {}}>
+                handleClick={() => {
+                  setIsMenuOpen(false);
+                  navigate(`/${category.toLowerCase()}`);
+                }}>
                 <div className='flex items-center justify-center w-40 h-40 text-lg border border-white rounded-full md:w-56 md:h-56 '>
                   {category}
                 </div>
@@ -30,7 +35,9 @@ const Menu = () => {
             <Button
               title='github'
               styles={BUTTON_TYPES.default}
-              handleClick={() => {}}>
+              handleClick={() => {
+                window.open(githubURL);
+              }}>
               <div className='inline-flex h-8 gap-2'>
                 github <ArrowIcon />
               </div>
