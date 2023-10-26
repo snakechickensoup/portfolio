@@ -63,3 +63,5 @@ export const works = [
     ],
   },
 ];
+
+export const githubURL = 'https://github.com/snakechickensoup';

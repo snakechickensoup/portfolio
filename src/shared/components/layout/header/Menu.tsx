@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Button from 'shared/components/button/Button';
 import { BUTTON_TYPES } from 'shared/components/button/constants';
-import { categories } from 'assets/options';
+import { categories, githubURL } from 'assets/options';
 import MenuIcon from 'assets/icons/Menu.svg?react';
 import ArrowIcon from 'assets/icons/Arrow.svg?react';
 import { useNavigate } from 'react-router-dom';
@@ -35,7 +35,9 @@ const Menu = () => {
             <Button
               title='github'
               styles={BUTTON_TYPES.default}
-              handleClick={() => {}}>
+              handleClick={() => {
+                window.open(githubURL);
+              }}>
               <div className='inline-flex h-8 gap-2'>
                 github <ArrowIcon />
               </div>
