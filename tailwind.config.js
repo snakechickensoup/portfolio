@@ -27,6 +27,9 @@ export default {
         window: 'width, height',
       },
     },
+    listStyleType: {
+      square: 'square',
+    },
   },
   plugins: [],
 };
