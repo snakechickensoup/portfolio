@@ -5,7 +5,7 @@ import Menu from './Menu';
 
 const Header = () => {
   return (
-    <header className='relative flex items-center gap-2 border-b'>
+    <header className='relative flex items-center gap-2 shadow-md'>
       <Menu />
       <h1 className='text-lg'>강미정</h1>
       <Button

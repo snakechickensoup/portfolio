@@ -7,14 +7,14 @@ import ArrowIcon from 'assets/icons/Arrow.svg?react';
 
 const Menu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-  const openMenu = isMenuOpen ? 'w-full h-full' : 'w-2 h-2';
+  const openMenu = isMenuOpen ? 'w-full h-full' : 'w-0 h-0';
   return (
     <>
       <div
         className={`z-10 fixed top-0  ${openMenu} transition-window duration-500 bg-default overflow-hidden`}>
         <ul className='flex flex-col items-center justify-center h-full gap-4 text-white md:flex-row md:gap-8'>
-          {categories.map((category) => (
-            <li>
+          {categories.map((category, idx) => (
+            <li key={idx}>
               <Button
                 title={category}
                 styles={BUTTON_TYPES.default}

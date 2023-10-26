@@ -24,7 +24,9 @@ const AboutPage = () => {
           <section className='p-6 sm:p-10'>
             <ul className='flex flex-wrap gap-2 sm:gap-3'>
               {tags.map((tag) => (
-                <li className='px-2 py-1 text-sm border rounded-full sm:text-base border-default'>
+                <li
+                  className='px-2 py-1 text-sm border rounded-full sm:text-base border-default'
+                  key={tag}>
                   {tag}
                 </li>
               ))}
