@@ -10,7 +10,7 @@ const MainPage = () => {
         강미정입니다.
       </h1>
       <section className='absolute flex flex-col items-end gap-2 right-10 bottom-20 sm:right-24 sm:bottom-32'>
-        <h3 className='text-lg font-bold text-right text-white sm:text-xl'>
+        <h3 className='text-lg font-bold text-right text-white sm:text-xl md:text-xlg'>
           모여봐요 동물의 숲을 <br /> 좋아합니다.
         </h3>
         <Button

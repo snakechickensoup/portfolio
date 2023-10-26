@@ -9,16 +9,18 @@ const Header = () => {
   const navigate = useNavigate();
 
   return (
-    <header className='relative flex items-center gap-2 shadow-md'>
+    <header className=' z-30 sticky top-0 flex items-center w-full gap-2 shadow-md bg-[#ffffff]'>
       <Menu />
       <div className='flex gap-2'>
         <Button
           handleClick={() => navigate('/')}
           title='main'
           styles={BUTTON_TYPES.default}>
-          <h1 className='text-lg text-default sm:text-xl'>강미정</h1>
+          <h1 className='text-lg text-default sm:text-xl md:text-xlg md:ml-2'>
+            강미정
+          </h1>
         </Button>
-        <h1 className='text-lg sm:text-xl'>
+        <h1 className='text-lg sm:text-xl md:text-xlg'>
           {pathname.length > 1 && pathname}
         </h1>
       </div>

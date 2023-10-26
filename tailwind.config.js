@@ -16,6 +16,7 @@ export default {
       base: ['1rem', '1.5rem'] /* 16px */,
       lg: ['1.5rem', '2rem'] /* 24px */,
       xl: ['1.875rem', '2.25rem'] /* 32px*/,
+      xlg: ['3rem', '1'] /* 48px */,
       xxl: ['3.75rem', '1'] /* 60px*/,
     },
     extend: {
