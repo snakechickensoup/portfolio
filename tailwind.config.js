@@ -7,6 +7,8 @@ export default {
       white: '#F5F5F5',
       green: '#31854D',
       yellow: '#FFCD29',
+      blind: '#E94057',
+      bryta: '#FFAA28',
     },
     fontSize: {
       xs: ['0.75rem', '1rem'] /* 12px */,
