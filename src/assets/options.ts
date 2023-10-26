@@ -71,7 +71,7 @@ export const projects = [
     name: 'Blind',
     about: 'Team Project (3인)',
     period: '23.08.08 ~ 23.09',
-    people: '프론트엔드 2명 / 백엔드 1명',
+    people: '🧑🏻‍💻 프론트엔드 2명 / 백엔드 1명',
     stack: ['React', 'TypeScript', 'Recoil', 'Tanstack Query', 'Tailwind CSS'],
     link: [
       { site: 'Github', url: 'https://github.com/Blind-Dating' },
@@ -109,7 +109,8 @@ export const projects = [
   {
     name: 'Bryta',
     about: 'Team Project (4인)',
-    period: '21.10.18 ~ 21.11.12 (4 weeks)',
+    period: '21.10.18 ~ 21.11 (4 weeks)',
+    people: '🧑🏻‍💻 프론트 2 / 백 1 / 풀스택 2',
     stack: ['JavaScript', 'React', 'CSS', 'Redux Toolkit'],
     link: [
       {
