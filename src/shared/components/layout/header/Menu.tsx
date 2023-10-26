@@ -1,10 +1,10 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import HamburgerButton from './HamburgerButton';
+import ArrowIcon from 'assets/icons/Arrow.svg?react';
 import Button from 'shared/components/button/Button';
 import { BUTTON_TYPES } from 'shared/components/button/constants';
 import { categories, githubURL } from 'assets/options';
-import MenuIcon from 'assets/icons/Menu.svg?react';
-import ArrowIcon from 'assets/icons/Arrow.svg?react';
-import { useNavigate } from 'react-router-dom';
 
 const Menu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -50,7 +50,7 @@ const Menu = () => {
         handleClick={() => setIsMenuOpen((prev) => !prev)}
         styles={BUTTON_TYPES.menu}
         title='Menu'>
-        <MenuIcon />
+        <HamburgerButton isOpen={isMenuOpen} />
       </Button>
     </>
   );
