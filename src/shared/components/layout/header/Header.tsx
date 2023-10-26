@@ -16,9 +16,11 @@ const Header = () => {
           handleClick={() => navigate('/')}
           title='main'
           styles={BUTTON_TYPES.default}>
-          <h1 className='text-lg text-default'>강미정</h1>
+          <h1 className='text-lg text-default sm:text-xl'>강미정</h1>
         </Button>
-        <h1 className='text-lg'>{pathname.length > 1 && pathname}</h1>
+        <h1 className='text-lg sm:text-xl'>
+          {pathname.length > 1 && pathname}
+        </h1>
       </div>
       <Button
         handleClick={() => {}}
