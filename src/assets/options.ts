@@ -65,3 +65,87 @@ export const works = [
 ];
 
 export const githubURL = 'https://github.com/snakechickensoup';
+
+export const projects = [
+  {
+    name: 'Blind',
+    about: 'Team Project (3인)',
+    period: '23.08.08 ~ 23.09',
+    people: '프론트엔드 2명 / 백엔드 1명',
+    stack: ['React', 'TypeScript', 'Recoil', 'Tanstack Query', 'Tailwind CSS'],
+    Link: [
+      { site: 'Github', url: 'https://github.com/Blind-Dating' },
+      { site: 'Blind Link', url: 'https://fe-zeta.vercel.app/' },
+    ],
+    image: '',
+    detail: {
+      title: `'블라인드' 데이팅 서비스`,
+      description:
+        '상대방과 서로 Like 상태가 되었을 시 채팅이 생성되어 대화를 나눌 수 있습니다.',
+      user: 'ID : asdasdasd / PW : asdasdasd',
+    },
+    works: {
+      title: 'Websocket을 사용한 실시간 채팅 구현',
+      work: [
+        {
+          main: '채팅 목록과 채팅방을 소켓을 통해 실시간으로 구독하여 채팅 업데이트 (Sock.js, Stomp.js 사용)',
+          sub: [
+            '채팅 목록을 실시간으로 구독하고 있기에 채팅방 생성 / 채팅 입력 시 목록과 채팅창이 즉시 업데이트 됩니다.',
+            '때문에 소켓이 중첩되어 채팅 목록과 채팅창을 이동할 때마다 값이 중복되는 이슈가 있었으나 컴포넌트가 unmount될 시 소켓을 close해줌으로써 해결할 수 있었습니다.',
+            '백엔드와의 지속적인 소통으로, 소켓의 주소와 상태를 확인하여 cors 이슈를 해결하였습니다. ',
+          ],
+        },
+        {
+          main: 'useInfiniteQuery Hook을 사용하여 무한 스크롤 구현',
+          sub: [
+            '채팅이 업데이트 되거나 상단으로 스크롤 하는 등의 경우에 따라 스크롤의 위치가 변경되어야하기에 recoil로 상태를 저장하고, Intersection Observer API를 활용해 스크롤의 높이를 조절하였습니다.',
+            'useInfiniteQuery hook을 사용하여 이전 데이터를 쉽게 불러올 수 있도록 하였습니다.',
+          ],
+        },
+        { main: 'API 요청을 통한 유저의 정보 수정 ' },
+      ],
+    },
+  },
+  {
+    name: 'Bryta',
+    about: 'Team Project (4인)',
+    period: '21.10.18 ~ 21.11.12 (4 weeks)',
+    stack: ['JavaScript', 'React', 'CSS', 'Redux Toolkit'],
+    Link: [
+      {
+        site: 'Github',
+        url: 'https://github.com/codestates/bryta',
+      },
+      {
+        site: 'Wiki',
+        url: 'https://github.com/codestates/Bryta/wiki',
+      },
+      {
+        site: 'Notion',
+        url: 'https://www.notion.so/ca2183c6199e4830ac348ee5976ea017',
+      },
+    ],
+    image: '',
+    detail: {
+      title: `'필모깨기'를 도와주는 서비스`,
+      description:
+        '선호하는 배우와 영화를 like 하고 한 페이지에서 관리할 수 있습니다.',
+    },
+    works: {
+      work: [
+        {
+          main: '프로젝트 아이디어 제공 및 기획 참여',
+          sub: [
+            '와이어프레임, 플로우 차트, 로고 제작',
+            'API문서, dummy data 제작',
+          ],
+        },
+        {
+          main: 'API요청을 통한 CRUD 구현',
+          sub: ['배우 / 영화 좋아요 기능', '마이 페이지 정보 수정'],
+        },
+        { main: '로그인 / 로그아웃 / 회원가입 기능 구현 ' },
+      ],
+    },
+  },
+];
