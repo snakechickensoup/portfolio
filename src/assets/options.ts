@@ -73,11 +73,11 @@ export const projects = [
     period: '23.08.08 ~ 23.09',
     people: '프론트엔드 2명 / 백엔드 1명',
     stack: ['React', 'TypeScript', 'Recoil', 'Tanstack Query', 'Tailwind CSS'],
-    Link: [
+    link: [
       { site: 'Github', url: 'https://github.com/Blind-Dating' },
       { site: 'Blind Link', url: 'https://fe-zeta.vercel.app/' },
     ],
-    image: '',
+    image: 'src/assets/images/blind.png',
     detail: {
       title: `'블라인드' 데이팅 서비스`,
       description:
@@ -111,7 +111,7 @@ export const projects = [
     about: 'Team Project (4인)',
     period: '21.10.18 ~ 21.11.12 (4 weeks)',
     stack: ['JavaScript', 'React', 'CSS', 'Redux Toolkit'],
-    Link: [
+    link: [
       {
         site: 'Github',
         url: 'https://github.com/codestates/bryta',
@@ -125,7 +125,7 @@ export const projects = [
         url: 'https://www.notion.so/ca2183c6199e4830ac348ee5976ea017',
       },
     ],
-    image: '',
+    image: 'src/assets/images/bryta.png',
     detail: {
       title: `'필모깨기'를 도와주는 서비스`,
       description:
