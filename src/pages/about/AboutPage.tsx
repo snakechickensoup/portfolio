@@ -8,7 +8,9 @@ const AboutPage = () => {
           <div className='w-32 h-32 overflow-hidden border rounded-full sm:w-40 sm:h-40 border-default md:w-60 md:h-60'>
             <img
               alt='user-avatar'
-              src={'src/assets/images/avatar.png'}
+              src={
+                'https://github.com/snakechickensoup/portfolio/blob/main/src/assets/images/avatar.png?raw=true'
+              }
               className='block object-cover w-full h-full '
             />
           </div>
