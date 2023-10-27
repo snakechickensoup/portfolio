@@ -36,7 +36,7 @@ const Project = (props: ProjectProps) => {
             </div>
           </div>
         </div>
-        <ul className='flex justify-center gap-6 m-2 sm:flex-col sm:gap-2'>
+        <ul className='flex justify-center gap-6 m-2 sm:flex-col sm:gap-2 sm:items-end'>
           {link.map((l) => (
             <li key={l.url}>
               <Button
