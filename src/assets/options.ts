@@ -77,7 +77,8 @@ export const projects = [
       { site: 'Github', url: 'https://github.com/Blind-Dating' },
       { site: 'Blind Link', url: 'https://fe-zeta.vercel.app/' },
     ],
-    image: 'src/assets/images/blind.png',
+    image:
+      'https://github.com/snakechickensoup/portfolio/blob/main/src/assets/images/blind.png?raw=true',
     detail: {
       title: `'블라인드' 데이팅 서비스`,
       description:
@@ -126,7 +127,8 @@ export const projects = [
         url: 'https://www.notion.so/ca2183c6199e4830ac348ee5976ea017',
       },
     ],
-    image: 'src/assets/images/bryta.png',
+    image:
+      'https://github.com/snakechickensoup/portfolio/blob/main/src/assets/images/bryta.png?raw=true',
     detail: {
       title: `'필모깨기'를 도와주는 서비스`,
       description:
