@@ -78,7 +78,7 @@ export const projects = [
       { site: 'DevBook Link', url: 'https://devbook-omega.vercel.app' },
     ],
     image:
-      'https://www.notion.so/52f3e9e5a8eb44a0af4dbf7de1f70f02?pvs=4#4c238aa690764b4f8c67967eb39e1bf0',
+      'https://raw.githubusercontent.com/snakechickensoup/portfolio/c6f173b163dd932d9e0aeeebfe6318bee340999a/src/assets/images/devbook.png',
     detail: {
       title: '프론트엔드 기술면접 질문 아카이브',
       description:
