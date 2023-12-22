@@ -18,11 +18,15 @@ const Project = (props: ProjectProps) => {
   const { name, about, period, people, stack, link, image, detail, works } =
     props;
 
-  const projectName = name.toLowerCase();
+  const colors: { [key in typeof name]: { text: string; bg: string } } = {
+    DevBook: { text: 'text-green', bg: 'bg-green' },
+    Blind: { text: 'text-blind', bg: 'bg-blind' },
+    Bryta: { text: 'text-bryta', bg: 'bg-bryta' },
+  };
   return (
     <li className='p-6 leading-relaxed bg-white text-default sm:p-12 lg:px-40'>
       <h1 className='ml-2 text-xl font-bold text-center sm:text-xxl'>{name}</h1>
-      <div className={`bg-${projectName} h-1 w-[60%] mb-3`} />
+      <div className={`${colors[name].bg} h-1 w-[60%] mb-3`} />
       <section className='sm:flex sm:justify-center'>
         <div className='flex items-center gap-8'>
           <div className='flex-1 max-w-[400px]'>
@@ -46,7 +50,7 @@ const Project = (props: ProjectProps) => {
                   window.open(l.url);
                 }}>
                 <div
-                  className={`inline-flex h-4 sm:h-6 gap-1 text-sm text-default hover:text-${projectName} whitespace-nowrap sm:text-base sm:font-bold`}>
+                  className={`inline-flex h-4 sm:h-6 gap-1 text-sm text-default hover:${colors[name].text} whitespace-nowrap sm:text-base sm:font-bold`}>
                   {l.site}
                   <ArrowIcon />
                 </div>
@@ -57,7 +61,7 @@ const Project = (props: ProjectProps) => {
       </section>
 
       <section className='my-4 sm:my-6'>
-        <h2 className={`font-bold  text-${projectName} sm:text-lg`}>
+        <h2 className={`font-bold  ${colors[name].text} sm:text-lg`}>
           {detail.title}
         </h2>
         <p className='text-sm sm:text-base'>{detail.description}</p>
