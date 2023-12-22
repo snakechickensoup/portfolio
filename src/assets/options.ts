@@ -68,13 +68,62 @@ export const githubURL = 'https://github.com/snakechickensoup';
 
 export const projects = [
   {
+    name: 'DevBook',
+    about: 'Team Project (2인)',
+    period: '23.11.29 ~ 23.12',
+    people: '🧑🏻‍💻 프론트엔드 2명',
+    stack: ['Next.js', 'TypeScript', 'Recoil', 'Tailwind CSS'],
+    link: [
+      { site: 'GitHub', url: 'https://github.com/devbookorg/devbook' },
+      { site: 'DevBook Link', url: 'https://devbook-omega.vercel.app' },
+    ],
+    image:
+      'https://www.notion.so/52f3e9e5a8eb44a0af4dbf7de1f70f02?pvs=4#4c238aa690764b4f8c67967eb39e1bf0',
+    detail: {
+      title: '프론트엔드 기술면접 질문 아카이브',
+      description:
+        '프론트엔드 관련 질문 답변을 작성하고, 관리자의 승인 하에 게시됩니다.',
+    },
+    works: {
+      work: [
+        {
+          main: 'Firebase를 사용하여 데이터 구조 생성 ',
+          sub: [
+            '댓글을 작성하기 위하여 Comments collection을 생성하고 CRUD 로직을 구현하였습니다.',
+            '답글 기능을 구현하기 위해 CommentsList 컴포넌트를 중첩하여 사용해 같은 ui를 재사용할 수 있었습니다. ',
+            '댓글의 reply배열에 답글 id를 저장하고, 해당 id로 데이터를 조회해 해당 답글 데이터를 불러옵니다. ',
+          ],
+        },
+        {
+          main: 'usePagination, useModal 등의 커스텀 훅과 재사용 컴포넌트 사용으로 효율적인 코드 작성 ',
+          sub: [
+            '모달 컴포넌트를 전역으로 관리하여 재사용이 쉽고, 편리하게 코드를 작성할 수 있습니다.',
+            'local storage를 활용하여 dark mode의 상태를 저장하고, data 속성을 이용해 테마를 변경합니다.',
+          ],
+        },
+        {
+          main: 'Framer를 활용해 디자인 시안을 제작하고 이를 바탕으로 Tailwind CSS를 활용해 UI 구현',
+          sub: [
+            'Tailwind CSS의 theme으로 주로 쓰이는 색상과 글씨 크기 등을 지정하여 작성하는데 어려움이 없도록 했습니다.',
+            '재사용 컴포넌트인 Button의 타입을 지정하고 해당 타입을 사용해 스타일을 설정하여 효율적으로 코드를 작성했습니다.',
+          ],
+        },
+        { main: 'PWA로 배포하였습니다.' },
+        {
+          main: 'Favicon과 Open Graph image등을 제작하고 프로젝트에 적용했습니다. ',
+        },
+        { main: 'Exclude 등을 활용하여 타입을 적절하고 알맞게 사용했습니다. ' },
+      ],
+    },
+  },
+  {
     name: 'Blind',
     about: 'Team Project (3인)',
     period: '23.08.08 ~ 23.09',
     people: '🧑🏻‍💻 프론트엔드 2명 / 백엔드 1명',
     stack: ['React', 'TypeScript', 'Recoil', 'Tanstack Query', 'Tailwind CSS'],
     link: [
-      { site: 'Github', url: 'https://github.com/Blind-Dating' },
+      { site: 'GitHub', url: 'https://github.com/Blind-Dating' },
       { site: 'Blind Link', url: 'https://fe-zeta.vercel.app/' },
     ],
     image:
@@ -115,7 +164,7 @@ export const projects = [
     stack: ['JavaScript', 'React', 'CSS', 'Redux Toolkit'],
     link: [
       {
-        site: 'Github',
+        site: 'GitHub',
         url: 'https://github.com/codestates/bryta',
       },
       {
